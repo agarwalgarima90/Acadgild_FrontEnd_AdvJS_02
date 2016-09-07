@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 02</title>
+<script>
+
+	var a = function(email) {
+		var atpos = email.indexOf("@");
+		var dotpos = email.lastIndexOf(".");
+		if(atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	result = a("agarwalgarima90@gmail.com");
+	document.write(result);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
